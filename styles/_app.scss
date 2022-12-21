@@ -1,0 +1,22 @@
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #ead2ab;
+  position: absolute;
+  z-index: 10000;
+  overflow-x: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+
+  &-text {
+    height: fit-content;
+
+    h4 {
+      display: inline-block;
+      font-family: Suisseintl;
+      font-size: 15vw;
+    }
+  }
+}
