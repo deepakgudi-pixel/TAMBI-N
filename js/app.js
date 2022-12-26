@@ -9,11 +9,11 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 function scroll() {
   gsap.registerPlugin(ScrollTrigger);
   const locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".main"),
+    el: document.querySelector("#main"),
     smooth: true,
   });
   locoScroll.on("scroll", ScrollTrigger.update);
-  ScrollTrigger.scrollerProxy(".main", {
+  ScrollTrigger.scrollerProxy("#main", {
     scrollTop(value) {
       return arguments.length
         ? locoScroll.scrollTo(value, 0, 0)
@@ -27,7 +27,7 @@ function scroll() {
         height: window.innerHeight,
       };
     },
-    pinType: document.querySelector(".main").style.transform
+    pinType: document.querySelector("#main").style.transform
       ? "transform"
       : "fixed",
   });
@@ -35,14 +35,17 @@ function scroll() {
   ScrollTrigger.refresh();
 }
 
-// scroll();
+scroll();
 
 const loader = gsap.timeline();
+
+const easing = [0.19, 1, 0.22, 1];
 
 loader.to(
   ".loader-text > h4:first-child",
   {
-    y: -50,
+    y: -80,
+    ease: easing,
   },
   1
 );
@@ -50,7 +53,8 @@ loader.to(
 loader.to(
   ".loader-text > h4:nth-child(2)",
   {
-    y: -100,
+    y: -130,
+    ease: easing,
   },
   1
 );
@@ -58,7 +62,8 @@ loader.to(
 loader.to(
   ".loader-text > h4:nth-child(3)",
   {
-    y: -140,
+    y: -160,
+    ease: easing,
   },
   1
 );
@@ -66,7 +71,8 @@ loader.to(
 loader.to(
   ".loader-text > h4:nth-child(4)",
   {
-    y: -85,
+    y: -95,
+    ease: easing,
   },
   1
 );
@@ -76,6 +82,7 @@ loader.to(
   {
     translateY: "-100%",
     duration: 1.25,
+    ease: easing,
   },
   1
 );
