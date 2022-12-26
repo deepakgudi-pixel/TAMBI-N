@@ -35,32 +35,47 @@ function scroll() {
   ScrollTrigger.refresh();
 }
 
-scroll();
+// scroll();
 
 const loader = gsap.timeline();
 
-
-loader.to(".loader-text > h4:first-child", {
+loader.to(
+  ".loader-text > h4:first-child",
+  {
     y: -30,
-  }, 1);
-  
-  
-  loader.to(".loader-text > h4:nth-child(2)", {
-      y: -80,
-    },1);
-  
-    loader.to(".loader-text > h4:nth-child(3)", {
-      y: -120,
-    },1);
+  },
+  1
+);
 
-    loader.to(".loader-text > h4:nth-child(4)", {
-        y: -65,
-      },1);
-  
-  loader.to(".loader", {
+loader.to(
+  ".loader-text > h4:nth-child(2)",
+  {
+    y: -80,
+  },
+  1
+);
+
+loader.to(
+  ".loader-text > h4:nth-child(3)",
+  {
+    y: -120,
+  },
+  1
+);
+
+loader.to(
+  ".loader-text > h4:nth-child(4)",
+  {
+    y: -65,
+  },
+  1
+);
+
+loader.to(
+  ".loader",
+  {
     translateY: "-100%",
     duration: 1.25,
-  },1);
-  
-
-
+  },
+  1
+);
