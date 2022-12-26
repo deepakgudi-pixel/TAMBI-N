@@ -42,7 +42,7 @@ const loader = gsap.timeline();
 loader.to(
   ".loader-text > h4:first-child",
   {
-    y: -30,
+    y: -50,
   },
   1
 );
@@ -50,7 +50,7 @@ loader.to(
 loader.to(
   ".loader-text > h4:nth-child(2)",
   {
-    y: -80,
+    y: -100,
   },
   1
 );
@@ -58,7 +58,7 @@ loader.to(
 loader.to(
   ".loader-text > h4:nth-child(3)",
   {
-    y: -120,
+    y: -140,
   },
   1
 );
@@ -66,7 +66,7 @@ loader.to(
 loader.to(
   ".loader-text > h4:nth-child(4)",
   {
-    y: -65,
+    y: -85,
   },
   1
 );
