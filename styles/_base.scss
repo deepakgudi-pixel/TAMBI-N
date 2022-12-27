@@ -21,3 +21,17 @@ a{
 }
 
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#main {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+video{
+  width: 100%;
+}
