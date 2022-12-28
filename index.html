@@ -10,6 +10,10 @@
       href="./assets/62debf8695dbd2b1a80583e0_SMALL ICON.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
   </head>
   <body>
     <div class="loader">
@@ -22,30 +26,27 @@
     </div>
 
     <div id="main">
-      <!-- section-one -->
       <div
-        class="section__one"
         data-scroll
         data-scroll-sticky
         data-scroll-target="#main"
+        class="section__one"
       >
         <div class="nav">
           <div class="nav__left">
             <h3>TMBN</h3>
             <div class="list">
-              <a href="">Projects </a>
-              <a href=""> , Courses </a>
-              <a href=""> , Youtube</a>
+              <a href="">Projects </a><a href=""> , Courses </a
+              ><a href=""> , Youtube</a>
             </div>
           </div>
-          <a class="info" href="">INFO</a>
+          <a href="" class="info">INFO</a>
         </div>
-
         <div class="section__one--content">
           <img
             class="textOne"
             src="./assets/62d5014e683aff1215b0e1e4_design 1.svg"
-            alt="text"
+            alt=""
           />
           <div class="lists">
             <h6>STRATEGY</h6>
@@ -60,15 +61,20 @@
           <img
             class="textTwo"
             src="./assets/62d5014e2d4f7b741e7630ff_see 2.svg"
-            alt="text"
+            alt=""
           />
         </div>
       </div>
 
-      <!-- section-two -->
+      <!-- section-2 -->
       <div class="section__two--container">
         <div class="section__two">
-          <div class="section__two--item01">
+          <!-- item-1 -->
+          <div
+            data-scroll
+            data-scroll-speed="-0.5"
+            class="section__two--item01"
+          >
             <video
               src="./assets/6324af62593bb16390919741_angell-transcode 3.mp4"
               autoplay
@@ -78,12 +84,14 @@
             <div class="item01__img">
               <img
                 src="./assets/6324b0102e5c4f1fdb6570b4_Group 579-p-500  4.webp"
-                alt="image of web design"
+                alt=""
               />
             </div>
           </div>
 
-          <div class="section__two--item02">
+          <!-- item-2 -->
+
+          <div data-scroll data-scroll-speed="2" class="section__two--item02">
             <img
               src="./assets/6325e5a2acd3d875285f6501_IslaRosa-p-800 5.jpg"
               alt=""
@@ -91,27 +99,26 @@
             <div class="item02__img">
               <img
                 src="./assets/6324afc16d1fac0e5ff8d8ec_MockupMaison_DD_B04-p-500 6.webp"
-                alt="image of web design"
+                alt=""
               />
             </div>
           </div>
 
-          <div class="section__two--item03">
-            <video
-              src="./assets/6325fb36e6b8036b6edc6d8d_heetchherosection-transcode 7.mp4"
-              autoplay
-              muted
-              loop
-            ></video>
+          <!-- item-3 -->
+
+          <div data-scroll data-scroll-speed="-2" class="section__two--item03">
+            <video src="./assets/6325fb36e6b8036b6edc6d8d_heetchherosection-transcode 7.mp4" autoplay muted loop></video>
             <div class="item03__img">
               <img
                 src="./assets/6324b0102e5c4f7fc86570b3_Group 580-p-1080  8.webp"
-                alt="image of web design"
+                alt=""
               />
             </div>
           </div>
 
-          <div class="section__two--item04">
+          <!-- item-4 -->
+
+          <div data-scroll data-scroll-speed="-2" class="section__two--item04">
             <img
               src="./assets/6324b038f21597525821aef2_Group 581 9.webp"
               alt=""
@@ -119,10 +126,12 @@
             <div class="item04__img">
               <img
                 src="./assets/6324afc18d9b47f27e634b14_MBPro_Mockup_DD_E02-p-500   10.webp"
-                alt="image of web design"
+                alt=""
               />
             </div>
           </div>
+
+          <!-- item-5-->
 
           <div class="section__two--item05">
             <video
@@ -134,7 +143,7 @@
             <div class="item05__img">
               <img
                 src="./assets/6324afc19febbfa57f7e6a94_Desktop - 27-p-500  11.webp"
-                alt="image of web design"
+                alt=""
               />
             </div>
           </div>
@@ -144,6 +153,7 @@
       <!-- section-3 -->
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script type="module" src="/js/app.js"></script>
   </body>
 </html>

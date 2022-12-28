@@ -20,18 +20,18 @@ a{
   text-decoration: none;
 }
 
-
-body::-webkit-scrollbar {
-  display: none;
+video{
+  width: 100%;
 }
 
-#main {
+
+#main{
   width: 100%;
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
 }
 
-video{
-  width: 100%;
+#main::-webkit-scrollbar{
+  display: none;
 }

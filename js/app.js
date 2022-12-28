@@ -37,6 +37,8 @@ function scroll() {
 
 scroll();
 
+
+
 const loader = gsap.timeline();
 
 const easing = [0.19, 1, 0.22, 1];
