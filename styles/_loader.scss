@@ -10,6 +10,9 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  @include breakpoint(600){
+    display: none;
+  }
 
   &-text {
     height: fit-content;
