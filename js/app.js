@@ -104,7 +104,7 @@ window.addEventListener("load",function(){
           trigger:".section__five",
           scroller:"#main",
           pin:true,
-          scrub: 4,
+          scrub: true,
           start:"top top",
           end:"+=100%"
       }
