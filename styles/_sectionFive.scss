@@ -4,6 +4,7 @@
   background-color: #ead2ab;
   overflow: hidden;
   position: relative;
+  z-index: 999999;
 
   &--container {
     padding-left: 2vw;

@@ -112,7 +112,7 @@ window.addEventListener("load", function () {
 });
 
 gsap.to(".section__seven--images",{
-   opacity: 1,
+  opacity: 1,
   ease: "power1.out",
   stagger:2,
   delay:2,

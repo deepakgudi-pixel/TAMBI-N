@@ -1,0 +1,23 @@
+.section__eight--footer {
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ead2ab;
+  margin-top: 250px;
+
+  h3, h4{
+    font-weight: 400;
+  }
+
+  .socials {
+    display: flex;
+    gap: 15px;
+
+    h5 {
+      font-size: 1vw;
+      font-weight: 400;
+    }
+  }
+}

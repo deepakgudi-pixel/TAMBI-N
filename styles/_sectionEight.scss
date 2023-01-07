@@ -3,10 +3,12 @@
   height: 55vh;
   background-color: #151515;
   display: flex;
-  justify-content: space-between;
+
   flex-direction: column;
   padding: 1vw 0;
-
+  position: relative;
+  z-index: 99999999;
+  top: -5px;
 
   &--container {
     width: 100%;
@@ -45,17 +47,11 @@
           height: 100%;
           background-color: #ead2ab;
         }
-
-
-
       }
-
-
     }
 
-    .boxes:hover{
-        opacity: 1;
+    .boxes:hover {
+      opacity: 1;
     }
-
   }
 }
