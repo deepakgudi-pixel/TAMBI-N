@@ -37,8 +37,6 @@ function scroll() {
 
 scroll();
 
-
-
 const loader = gsap.timeline();
 
 const easing = [0.19, 1, 0.22, 1];
@@ -89,25 +87,35 @@ loader.to(
   1
 );
 
-
-
-window.addEventListener("load",function(){
+window.addEventListener("load", function () {
   console.log(document.querySelector(".section__five").offsetWidth);
-  var letters =  document.querySelector(".section__five  .section__five--container > img").offsetWidth;
-  
-  letters = Number(letters-document.querySelector(".section__five").offsetWidth);
+  var letters = document.querySelector(
+    ".section__five  .section__five--container > img"
+  ).offsetWidth;
+
+  letters = Number(
+    letters - document.querySelector(".section__five").offsetWidth
+  );
   // console.log(letters);
-  gsap.to(".section__five .section__five--container > img",{
-      x:-(letters),
-      ease:"none",
-      scrollTrigger:{
-          trigger:".section__five",
-          scroller:"#main",
-          pin:true,
-          scrub: true,
-          start:"top top",
-          end:"+=100%"
-      }
-  })
-  
+  gsap.to(".section__five .section__five--container > img", {
+    x: -letters,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".section__five",
+      scroller: "#main",
+      pin: true,
+      scrub: true,
+      start: "top top",
+      end: "+=100%",
+    },
+  });
+});
+
+gsap.to(".section__seven--images",{
+   opacity: 1,
+  ease: "power1.out",
+  stagger:2,
+  delay:2,
+  duartion:2,
+  repeat:-1
 })
