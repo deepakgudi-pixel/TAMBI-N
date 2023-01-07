@@ -88,3 +88,26 @@ loader.to(
   },
   1
 );
+
+
+
+window.addEventListener("load",function(){
+  console.log(document.querySelector(".section__five").offsetWidth);
+  var letters =  document.querySelector(".section__five  .section__five--container > img").offsetWidth;
+  
+  letters = Number(letters-document.querySelector(".section__five").offsetWidth);
+  // console.log(letters);
+  gsap.to(".section__five .section__five--container > img",{
+      x:-(letters),
+      ease:"none",
+      scrollTrigger:{
+          trigger:".section__five",
+          scroller:"#main",
+          pin:true,
+          scrub: 4,
+          start:"top top",
+          end:"+=100%"
+      }
+  })
+  
+})

@@ -1,0 +1,46 @@
+.section__five {
+  width: 100%;
+  height: 100vh;
+  background-color: #ead2ab;
+  overflow: hidden;
+  position: relative;
+
+  &--container {
+    padding-left: 2vw;
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    > img {
+      width: 200%;
+    }
+
+    .video__item01 {
+      position: absolute;
+      top: 60%;
+      left: 15%;
+      width: 300px;
+      height: 200px;
+      z-index: 999;
+    }
+
+    .video__item02 {
+      position: absolute;
+      top: 10%;
+      left: 45%;
+      width: 300px;
+      height: 300px;
+      z-index: 999;
+    }
+
+    .video__item03 {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      width: 400px;
+      height: 400px;
+      z-index: 999;
+    }
+  }
+}
